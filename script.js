@@ -1,4 +1,4 @@
-var numSorteado = num = (Math.random() * 10).toFixed(0)
+var numSorteado = num = (Math.random() * 50).toFixed(0)
 
 function jogar(){
     var num = Number(document.querySelector("#chute").value)
@@ -11,4 +11,8 @@ function jogar(){
     }else if(num == numSorteado){
         resultado.innerHTML = "Acertou!"
     }
+}
+
+function sortear(){
+    document.location.reload()
 }
